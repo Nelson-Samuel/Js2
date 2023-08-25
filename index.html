@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Element</title>
+    <style>
+        body{
+            transition: all 1.5s ease;
+        }
+        div{
+            border: 2px double greenyellow;
+            width: 40%;
+            margin-top: 20px;
+            margin-left: 30px;
+            padding: 20px;
+            background-color: deepskyblue;
+            color: white;
+            border-radius: 15px;
+        }
+       input.a{
+        color: black;
+        width:150px ;
+        border-radius: 15px;
+        
+       }
+       input.b{
+        padding: 5px;
+        text-align: center;
+        margin-left: 60px;
+        border-radius: 20px;
+        background-color:grey;
+        color: white;
+       }
+       p{
+        border-radius: 20px;
+        border: 2px dotted lawngreen;
+        width: 200px;
+        height:100px;
+        background-color:white;
+        color: black;
+        margin-left: 5px;
+        padding: 10px;
+        font-family: 'Times New Roman', Times, serif;
+       }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <form action="">
+            <label >Enter a Element  :</label>
+            <input type="text" class="a" name="element" id="ele" placeholder="Something..."><br><br>
+            <input type="button" class="b" name="sub" value="CLICK ME" id="but">
+            <br>
+            <p class="c" id="out"></p>
+        </form>
+    </div>
+    <script>
+        var inp=document.getElementById("ele");
+        var btn=document.getElementById("but");
+        var otp=document.getElementById("out");
+    
+        function fun1(){
+            otp.innerHTML =inp.value;
+        }
+    </script>
+</body>
+</html>
